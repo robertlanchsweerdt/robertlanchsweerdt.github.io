@@ -1,0 +1,16 @@
+{
+  "name": "portfolioproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch ./sass/:styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.2",
+    "sass": "^1.37.0"
+  }
+}
