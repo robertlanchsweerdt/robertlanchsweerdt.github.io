@@ -1,15 +1,14 @@
+#section__hero h1 {
+  font-size: 5rem;
+  line-height: 0.8;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: black;
 }
 
 .site-wrapper {
-  outline: solid 1px red;
-  overflow: hidden;
-}
-
-nav {
-  outline: solid 2px blue;
+  max-width: 1920px;
 }
 
 .container {
@@ -17,8 +16,136 @@ nav {
 }
 
 section {
-  background-color: orange;
-  height: 100vh;
+  padding: 5em 0;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clr__bg-primary {
+  background-color: #e2871c;
+}
+
+.clr__text-secondary {
+  color: #3c5b96;
+}
+
+.c__btn-secondary {
+  background-color: #3c5b96;
+  color: white;
+}
+.c__btn-secondary:hover {
+  background-color: #2c436d;
+  color: white;
+}
+
+.bi {
+  color: black;
+}
+
+.icons-group a {
+  transition: transform 300ms ease;
+  text-align: center;
+}
+
+.icons-group a:hover {
+  transform: scale(1.2);
+}
+
+nav.c__fixed-top {
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  transition: all 1000ms ease;
+  z-index: 100;
+}
+nav.c__fixed-top li a {
+  color: white;
+}
+
+#section__hero .row {
+  height: 90vh;
+}
+
+#about > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "intro article" "icons article" "blank article";
+}
+@media (max-width: 768px) {
+  #about > div {
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "article" "icons";
+  }
+}
+
+.about__intro {
+  grid-area: intro;
+}
+
+.about__icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, auto));
+  grid-area: icons;
+  font-size: 40px;
+}
+
+.about__article {
+  grid-area: article;
+}
+
+#contact-wrapper {
+  display: grid;
+  gap: 40px;
+  text-align: justify;
+  grid-template-areas: "a a b b" "c c d d";
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  #contact-wrapper {
+    grid-template-areas: "b" "c" "d";
+    grid-template-columns: 1fr;
+  }
+}
+
+#contact-wrapper article {
+  grid-area: c;
+}
+#contact-wrapper h2 {
+  grid-area: b;
+}
+#contact-wrapper form {
+  grid-area: d;
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  grid-column: 2/-1;
+  justify-self: end;
+}
+
+.footer-icons a {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

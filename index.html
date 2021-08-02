@@ -37,9 +37,9 @@
     <div class="site-wrapper">
 
         <!-- NAVIGATION: START -->
-        <header id="nav__header">
+        <header id="header__nav">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+            <nav class="navbar navbar-expand-lg" id="navbar_top">
 
                 <div class="container">
 
@@ -78,15 +78,288 @@
             <!-- NAVIGATION: END  -->
         </header>
 
-        <section>
-            <h1>Hello World</h1>
+        <!-- HERO SECTION -->
+        <section id='section__hero'>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class='col-6 my-auto'>
+
+                        <h1 class="fw-bolder">Full-Stack</h1>
+                        <h1 class="fw-bolder">Developer</h1>
+                        <p class="fw-light display-5 py-3">Hello, I'm Robert</p>
+                        <button type="button" class="btn c__btn-secondary btn-lg">VIEW PROJECTS</button>
+
+                    </div>
+
+                    <div class='col-6'>
+
+                        <img src="" alt="photo of Robert">
+
+                    </div>
+                </div>
+
+            </div>
+
         </section>
-        <section>
-            <h1>Hello World</h1>
+
+        <!-- PROJECTS SECTION -->
+        <section id='projects'>
+            <div class="container">
+
+                <div>
+                    <h2>Inside the book...</h2>
+                    <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Static Layout</h3>
+                                <p class="card-text lead">Re-create nearly an identical copy of an existing
+                                    website,
+                                    up to
+                                    two-times the view-height, to demonstrate skill using HTML, CSS, the use of Flexbox
+                                    and CSS Grid. Project used JavaScript to improve UX interacting with the clone site.
+                                </p>
+
+                                <div class="btn-container">
+                                    <a href="#" class="btn c__btn-secondary">View App</a>
+                                    <a href="#" class="btn c__btn-secondary">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">CSS Animation</h3>
+                                <p class="card-text lead">Using codepen to construct a creature that animates using HTML
+                                    and
+                                    CSS to demonstrate skill using hierarchy and nesting of HTML tags, a variety of
+                                    classes and IDs, and proper use of CSS. Project also uses JavaScript to add an
+                                    interactive element along with DOM manipulation.
+                                </p>
+
+                                <div class="btn-container">
+                                    <a href="#" class="btn c__btn-secondary">View App</a>
+                                    <a href="#" class="btn c__btn-secondary">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">API Project | Formula One Racing</h3>
+                                <p class="card-text lead">Application demonstrates skill and ability to fetch data from
+                                    the
+                                    F1 Racing API, use of DOM manipulation to tie the JavaScript to the HTML, ability to
+                                    take API data and display it to the screen, and ES6 modules.
+                                </p>
+                                <div class="btn-container">
+                                    <a href="#" class="btn c__btn-secondary">View App</a>
+                                    <a href="#" class="btn c__btn-secondary">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">API Project | Air Quality</h3>
+                                <p class="card-text lead">Application utilizes fetch and DOM manipulation using the Air
+                                    Visual API. Bootstrap is used in the styling, and the application is deployed to
+                                    Firebase.
+                                </p>
+                                <div class="btn-container">
+                                    <a href="#" class="btn c__btn-secondary">View App</a>
+                                    <a href="#" class="btn c__btn-secondary">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h1>Hello World</h1>
+
+        <!-- ABOUT SECTION -->
+        <section class='clr__bg-primary' id='about'>
+
+            <div class="container">
+
+                <div class='about__intro'>
+                    <h2>Hello, I'm Robert</h2>
+                    <p class="lead">Thank-you for visiting my site</p>
+                </div>
+
+                <div class="about__icons icons-group">
+
+                    <a href="#">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-file-earmark-person-fill"></i>
+                    </a>
+
+                </div>
+
+                <article class='about__article'>
+
+                    <p class="fw-light">
+                        I have a passion to build web apps that help people to work smarter, and improve customer
+                        experiences.</p>
+
+                    <p class="fw-light">Along with coding killer apps, my mission when working with people and
+                        businesses is
+                        to over-deliver,
+                        foster open communication, and focus on listening and learning about the problems so the
+                        application
+                        fully delivers the solution.</p>
+
+                    <p class="fw-light">Besides being a coder, my work history to successfully on-board new
+                        technologies
+                        from bid to launch
+                        is a perfect fit for people and businesses that work with me.</p>
+
+                    <p class="fw-light">A big accomplishment for 2021 will be graduating from the Eleven Fifty
+                        Academy
+                        with
+                        a certificate in
+                        Web Development after completing an industry-guided curriculum with 500+ hours of logged
+                        coding
+                        and
+                        training time.
+                    </p>
+
+                </article>
+
+            </div>
+
         </section>
+
+        <!-- CONTACT SECTION -->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div id='contact-wrapper'>
+
+                    <article>
+
+                        <p>
+                            I’m seeking remote employment and freelance opportunities to collaborate with people and
+                            agencies.<br /><br />
+
+                            If you love to win, value the ‘straight-shooter’ and looking to add a problem-solver to your
+                            team, then reach out and let’s work together!<br /><br />
+
+                            You may either fill-out the contact form or <a href="mailto:robert.lanchsweerdt@gmail.com"
+                                class="clr__text-secondary">email
+                                me</a>.
+                        </p>
+
+                    </article>
+
+                    <h2>Contact Me!</h2>
+
+                    <form>
+                        <label for="email" class="form-label">Email address:</label>
+                        <!-- input group -->
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Enter an email address that we can reply to">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+
+                            </span>
+                        </div>
+                        <label for="name" class="form-label">Name:</label>
+                        <!-- input group -->
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill text-secondary"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                        </div>
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <!-- input group -->
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                            </span>
+                            <select class="form-select" id="subject">
+                                <option value="pricing" selected>Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
+                        <div class="mb-4 mt-5 form-floating">
+                            <textarea class="form-control" id="query" style="height: 140px"
+                                placeholder="query"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn c__btn-secondary">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class='clr__bg-primary'>
+
+            <div class="container">
+
+                <div>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    &copy;
+                    Robert Lanchsweerdt
+                </div>
+
+                <div class="footer-icons icons-group">
+
+                    <a href="#">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
 
     </div>
 
