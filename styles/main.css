@@ -1,18 +1,16 @@
-#section__hero h1 {
-  font-size: 5rem;
-  line-height: 0.8;
-}
-
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+p {
+  font-size: 1.125rem;
 }
 
 .site-wrapper {
   max-width: 1920px;
-}
-
-.container {
-  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 section {
@@ -59,26 +57,70 @@ section {
   transform: scale(1.2);
 }
 
-nav.c__fixed-top {
-  position: fixed;
-  background-color: black;
-  color: white;
-  width: 100%;
-  transition: all 1000ms ease;
+nav {
   z-index: 100;
 }
-nav.c__fixed-top li a {
-  color: white;
+
+#navbar_top {
+  height: 100px;
 }
 
-#section__hero .row {
-  height: 90vh;
+#section__hero {
+  padding: unset;
+  width: 100%;
+}
+
+.hero-container {
+  width: 1920px;
+}
+
+.img-side {
+  overflow: hidden;
+}
+
+.img-container {
+  height: 100%;
+  max-height: 90vh;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#about {
+  position: relative;
+  background-image: url(../imgs/double-bubble.png);
+}
+#about h2 {
+  position: relative;
+  color: black;
+  z-index: 2;
+}
+#about h2,
+#about p,
+#about a {
+  position: relative;
+  z-index: 2;
+}
+
+#about::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(58, 89, 146, 0.7);
+  z-index: 1;
 }
 
 #about > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "intro article" "icons article" "blank article";
+  grid-template-areas: "intro article" "intro article" "icons article" "icons article";
 }
 @media (max-width: 768px) {
   #about > div {
@@ -89,6 +131,12 @@ nav.c__fixed-top li a {
 
 .about__intro {
   grid-area: intro;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .about__intro {
+    align-self: unset;
+  }
 }
 
 .about__icons {

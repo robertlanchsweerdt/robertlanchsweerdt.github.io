@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const navBar = document.getElementById('navbar_top');
+
   window.addEventListener('scroll', function () {
-    if (window.scrollY > 200) {
-      document.getElementById('navbar_top').classList.add('c__fixed-top');
+    if (window.scrollY > 500) {
+      navBar.classList.add('c__fixed-top');
       // add padding top to show content behind navbar
-      navbar_height = document.querySelector('.navbar').offsetHeight;
-      document.body.style.paddingTop = navbar_height + 'px';
+      let navBar_height = navBar.offsetHeight;
+      // console.log(navbar_height);
+      // document.body.style.paddingTop = navBar_height + 'px';
     } else {
       document.getElementById('navbar_top').classList.remove('c__fixed-top');
       // remove padding top from body

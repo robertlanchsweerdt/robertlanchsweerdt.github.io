@@ -2,14 +2,17 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+p {
+  font-size: 1.125rem;
 }
 
 .site-wrapper {
   max-width: 1920px;
-}
-
-.container {
-  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 section {
@@ -63,34 +66,82 @@ section {
 
 // NAVIGATION
 
-nav.c__fixed-top {
-  position: fixed;
-  background-color: black;
-  color: white;
-  width: 100%;
-  transition: all 1000ms ease;
+nav {
   z-index: 100;
-
-  li a {
-    color: white;
-  }
 }
 
-#section__hero .row {
-  height: 90vh;
+#navbar_top {
+  height: 100px;
+}
+
+// SECTION:  HERO
+
+#section__hero {
+  padding: unset;
+  width: 100%;
+}
+
+.hero-container {
+  width: 1920px;
+}
+
+.img-side {
+  overflow: hidden;
+}
+
+.img-container {
+  height: 100%;
+  max-height: 90vh;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 // SECTION:  PROJECTS
 
 // SECTION: ABOUT
 
+#about {
+  position: relative;
+  background-image: url(../imgs/double-bubble.png);
+
+  h2 {
+    position: relative;
+    color: black;
+    z-index: 2;
+  }
+
+  h2,
+  p,
+  a {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+#about::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(219, 43%, 40%, 0.7);
+  z-index: 1;
+}
+
 #about > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'intro article'
+    'intro article'
     'icons article'
-    'blank article';
+    'icons article';
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -103,6 +154,11 @@ nav.c__fixed-top {
 
 .about__intro {
   grid-area: intro;
+  align-self: center;
+
+  @media (max-width: 768px) {
+    align-self: unset;
+  }
 }
 
 .about__icons {
