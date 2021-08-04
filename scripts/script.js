@@ -1,17 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const navBar = document.getElementById('navbar_top');
+document.addEventListener('DOMContentLoaded', () => {
+  const pageTop = document.querySelector('.site-wrapper');
+  const toTopArrow = document.getElementById('btn-back-to-top');
 
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 500) {
-      navBar.classList.add('c__fixed-top');
-      // add padding top to show content behind navbar
-      let navBar_height = navBar.offsetHeight;
-      // console.log(navbar_height);
-      // document.body.style.paddingTop = navBar_height + 'px';
+  // Button Scroll to Top
+  window.addEventListener('scroll', () => {
+    const scrollHeight = window.pageYOffset;
+
+    if (scrollHeight > 500) {
+      toTopArrow.classList.add('show-toTopArrow');
     } else {
-      document.getElementById('navbar_top').classList.remove('c__fixed-top');
-      // remove padding top from body
-      document.body.style.paddingTop = '0';
+      toTopArrow.classList.remove('show-toTopArrow');
     }
+  });
+
+  // Enable Bootstrap Tooltips
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 });

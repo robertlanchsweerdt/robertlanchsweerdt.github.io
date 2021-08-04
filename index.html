@@ -37,43 +37,30 @@
     <div class="site-wrapper">
 
         <!-- NAVIGATION: START -->
-        <header id="header__nav">
+        <header class="clr__bg-primary" id="header__nav">
 
-            <nav class="navbar navbar-expand-lg" id="navbar_top">
-
-                <div class="container">
-
-                    <a class="navbar-brand" href="#">Navbar</a>
-
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="container d-flex justify-content-end">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
                         <span class="navbar-toggler-icon"></span>
-
                     </button>
 
+                    <!-- nav links -->
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-
-                        <ul class="navbar-nav">
-
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+                                <a class="nav-link" aria-current="page" href="#projects">Projects</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#projects">PROJECTS</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">CONTACT</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
-
                         </ul>
-
                     </div>
-
                 </div>
-
             </nav>
             <!-- NAVIGATION: END  -->
         </header>
@@ -81,20 +68,21 @@
         <!-- HERO SECTION -->
         <section class="clr__bg-primary" id='section__hero'>
 
-            <div class="hero-container">
+            <div class="container">
 
-                <div class="row">
+                <div class="row" style="margin: 0">
 
-                    <div class='col-12 col-md-6 my-auto'>
+                    <div class='col-12 col-md-7 my-auto hero__copy'>
 
-                        <h1 class="fw-bolder">Full-Stack</h1>
-                        <h1 class="fw-bolder">Developer</h1>
-                        <p class="fw-light display-5 py-3">Hello, I'm Robert</p>
-                        <button type="button" class="btn c__btn-secondary btn-lg">VIEW PROJECTS</button>
+                        <h1 class="fw-bolder">Web Developer</h1>
+
+                        <p class="fw-regular py-3 clr__text-secondary">Hello, I'm Robert</p>
+
+                        <a href="#projects" role="button" class="btn c__btn-secondary btn-lg">VIEW PROJECTS</a>
 
                     </div>
 
-                    <div class="col-6 img-side d-none d-lg-block">
+                    <div class="col-5 d-none d-lg-block" style="padding: 0">
 
                         <div class="img-container">
 
@@ -114,13 +102,10 @@
         <section id='projects'>
             <div class="container">
 
-                <div>
-                    <h2>Inside the book...</h2>
-                    <p class="lead text-muted">A quick glance at the topics you'll learn</p>
-                </div>
+                <h2 class="mb-5">Projects</h2>
 
                 <div class="row gy-4">
-                    <div class="col-sm-6">
+                    <div class="col-12 col-md-6">
                         <div class="card">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
@@ -139,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-12 col-md-6">
                         <div class="card">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
@@ -158,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-12 col-md-6">
                         <div class="card">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
@@ -175,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-12 col-md-6">
                         <div class="card">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
@@ -200,24 +185,31 @@
 
             <div class="container">
 
-                <div class='about__intro'>
-                    <h2 class="display-2 fw-normal">Hello, I'm Robert</h2>
-                    <p class="fs-2">Thank-you for visiting my site.</p>
+                <h2 class="about__title mb-5">About Robert</h2>
+
+                <div class="about__photo">
+
+                    <img src="./imgs/about.jpg" alt="">
+
                 </div>
 
                 <div class="about__icons icons-group">
 
-                    <a href="#">
-                        <i class="bi bi-github"></i>
+                    <a href="https://github.com/robertlanchsweerdt" target="_blank" rel="noopener">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="See my GitHub">
+                            <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-lanchsweerdt/" target="_blank" rel="noopener">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Visit my LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="mailto:robert.lanchsweerdt@gmail.com">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Send me an email">
+                            <i class="bi bi-envelope-fill"></i>
                     </a>
                     <a href="#">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bi bi-file-earmark-person-fill"></i>
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Download my resume">
+                            <i class="bi bi-file-earmark-person-fill"></i>
                     </a>
 
                 </div>
@@ -325,7 +317,7 @@
                             <label for="query">Your query...</label>
                         </div>
                         <div class="mb-4 text-center">
-                            <button type="submit" class="btn c__btn-secondary">Submit</button>
+                            <button type="submit" class="btn btn-lg c__btn-secondary">Submit</button>
                         </div>
                     </form>
 
@@ -367,6 +359,12 @@
         </footer>
 
     </div>
+
+    <!-- scroll back to top button -->
+
+    <a href="#" role="button" class="btn-floating btn-lg" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
 </body>
 
