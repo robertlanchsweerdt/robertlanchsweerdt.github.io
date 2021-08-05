@@ -1,0 +1,44 @@
+<form>
+    <label for="email" class="form-label">Email address:</label>
+    <!-- input group -->
+    <div class="input-group mb-4">
+        <span class="input-group-text">
+            <i class="bi bi-envelope-fill text-secondary"></i>
+        </span>
+        <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+        <!-- tooltip -->
+        <span class="input-group-text">
+            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Enter an email address that we can reply to">
+                <i class="bi bi-question-circle text-muted"></i>
+            </span>
+
+        </span>
+    </div>
+    <label for="name" class="form-label">Name:</label>
+    <!-- input group -->
+    <div class="mb-4 input-group">
+        <span class="input-group-text">
+            <i class="bi bi-person-fill text-secondary"></i>
+        </span>
+        <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+    </div>
+    <label for="subject" class="form-label">What is your question about?</label>
+    <!-- input group -->
+    <div class="mb-4 input-group">
+        <span class="input-group-text">
+            <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+        </span>
+        <select class="form-select" id="subject">
+            <option value="pricing" selected>Pricing query</option>
+            <option value="content">Content query</option>
+            <option value="other">Other query</option>
+        </select>
+    </div>
+    <div class="mb-4 mt-5 form-floating">
+        <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+        <label for="query">Your query...</label>
+    </div>
+    <div class="mb-4 text-center">
+        <button type="submit" class="btn btn-lg c__btn-secondary">Submit</button>
+    </div>
+</form>
